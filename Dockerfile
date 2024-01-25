@@ -9,15 +9,15 @@ COPY build.gradle settings.gradle ./
 
 # Download and resolve dependencies using the Gradle Wrapper
 #--chmod=765
-RUN git update-index --chmod=+x gradlew
+
 COPY  gradlew .
 COPY gradle gradle
-
+RUN chmod +x ./gradlew
 RUN ./gradlew dependencies
 
 # Copy the rest of the source code
 COPY . .
-
+RUN chmod +x ./gradlew
 # Build the application using the Gradle Wrapper
 RUN ./gradlew build --stacktrace
 
