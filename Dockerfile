@@ -11,6 +11,7 @@ COPY build.gradle settings.gradle ./
 COPY gradlew .
 COPY gradle gradle
 RUN chmod +x gradlew
+RUN ./gradlew clean
 RUN ./gradlew dependencies
 
 # Copy the rest of the source code
