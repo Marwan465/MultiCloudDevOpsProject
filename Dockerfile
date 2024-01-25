@@ -8,7 +8,7 @@ WORKDIR /app
 COPY build.gradle settings.gradle ./
 
 # Download and resolve dependencies using the Gradle Wrapper
-COPY --chmod -x gradlew .
+COPY --chmod=765 gradlew .
 COPY gradle gradle
 
 RUN ./gradlew dependencies
