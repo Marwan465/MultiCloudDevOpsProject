@@ -1,0 +1,6 @@
+---
+
+- include_tasks: download-pckgs.yml
+- include_tasks: service_installation.yml
+- include_tasks: firewall_managing.yml
+

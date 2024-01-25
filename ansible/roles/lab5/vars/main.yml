@@ -1,0 +1,24 @@
+---
+# vars file for /home/web/ansible/roles/lab5
+#
+services:
+  - unzip
+  - git
+  - docker
+  - java-17-openjdk
+  - fontconfig
+  - jenkins
+packages:
+  - url: "https://pkg.jenkins.io/redhat-stable/jenkins.repo"
+    dest: "/etc/yum.repos.d/jenkins.repo"
+  - url: "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-developer/sonarqube-developer-10.3.0.82913.zip"
+    dest: "/opt/sonarqube.zip"
+unzip:
+  - src: "/opt/sonarqube.zip"
+    dest: "/opt"
+services_mng:
+  #- {name: 'docker', state: 'started', enabled: 'yes'}
+  - {name: 'jenkins', state: 'started', enabled: 'yes'}
+firewall_mng:
+  - {name: 'jenkins', state: 'enabled', permanent: 'yes'}
+

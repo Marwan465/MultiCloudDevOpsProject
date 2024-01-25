@@ -1,0 +1,7 @@
+---
+
+- name: lab5
+  hosts: ec2_instances
+  ignore_errors: yes
+  roles:
+    - lab5
