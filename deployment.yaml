@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: marwan-jenkins-app
+  name: "${APP_NAME}"
   namespace: marwan
   uid: da942140-92d2-4db6-8431-23f0335cca37
   resourceVersion: '5006286'
@@ -106,12 +106,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: marwan-jenkins-app
+      app: "${APP_NAME}"
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: marwan-jenkins-app
+        app: "${APP_NAME}"
     spec:
       volumes:
         - name: pvc-bf5f02f0-110b-4c38-8438-156e5803a31e
@@ -119,7 +119,7 @@ spec:
             claimName: simple-claim
       containers:
         - name: container-marwan
-          image: "marwan512/jenkins-test:latest"
+          image: "${IMAGE_NAME}"
           ports:
             - containerPort: 8080
               protocol: TCP
