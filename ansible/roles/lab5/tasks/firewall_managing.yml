@@ -1,0 +1,8 @@
+---
+ - name: firewall manage
+   firewalld:
+     service: "{{ item.name }}"
+     state: "{{ item.state }}"
+     permanent: "{{ item.permanent }}" 
+   loop: "{{ firewall_mng }}"
+   notify: reload firewall

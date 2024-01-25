@@ -1,0 +1,8 @@
+---
+# handlers file for /home/web/ansible/roles/lab5
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted
+    - name: reload firewall
+      command: firewall-cmd --reload

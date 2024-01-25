@@ -1,0 +1,14 @@
+---
+
+- name: services installation repo
+  ansible.builtin.dnf:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ services }}"
+
+- name: enable services
+  service:
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+    enabled: "{{ item.enabled }}"
+  loop: "{{ services_mng }}"

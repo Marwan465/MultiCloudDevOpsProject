@@ -1,0 +1,14 @@
+---
+
+- name: install required packges
+  command: "wget -O {{ item.dest }} {{ item.url }}"
+  with_items: "{{ packages }}"
+
+- name: Unzip the package
+  unarchive:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+        remote_src: yes
+  with_items: "{{ unzip }}"
+- name: import jenkins key
+  command: "rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key"
