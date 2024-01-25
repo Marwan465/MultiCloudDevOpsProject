@@ -9,7 +9,7 @@ COPY build.gradle settings.gradle ./
 
 # Download and resolve dependencies using the Gradle Wrapper
 #--chmod=765
-RUN chmod +x ./gradlew
+RUN git update-index --chmod=+x gradlew
 COPY  gradlew .
 COPY gradle gradle
 
