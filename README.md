@@ -71,7 +71,7 @@
 * **Time to run** `ansible-playbook -i /path/to/inventory_file your_playbook.yml`
 ## Jenkins
   ### Jenkins Setup instructions
-    [choose your host and follow the guide on jenkins website](https://www.jenkins.io/download/)
+  - [choose your host and follow the guide on jenkins website](https://www.jenkins.io/download/)
   ### Download required plugins
   ### Configuring credentials
   ### Jenkins shared library
