@@ -6,7 +6,8 @@
 [Ansible role](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/main/ansible) \
 [jenkins shared library](https://github.com/Marwan465/jenkins-simple-library) \
 [JenkinsFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/jenkinsfile) \
-[DockerFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/Dockerfile) 
+[DockerFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/Dockerfile) \
+[Jenkins job configuration instructions for building Docker image on code commits]()
 
 ### Goals 
 - provision AWS resources using Terraform
@@ -29,9 +30,10 @@
   - [Jenkins Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-setup-instructions)
   - [Download required plugins](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#download-required-plugins)
   - [Configuring credentials](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#configuring-credentials)
-- [Triggers](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#triggers)
+- [Jenkins job configuration instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#triggers)
      - [Creating github webhook](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#creating-github-webhook)
      - [Creating pipeline trigger](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#creating-pipeline-trigger)
+     - [Creating Pipeline]()
 - [Jenkins shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-shared-library)
      - [Configure jenkins shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#configure-jenkins-shared-library)
 - [Pipeline](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#pipeline)
@@ -102,8 +104,8 @@
         - **kind** choose **Secret File**
         - **File** click browse and choose you **KubeConfig** file
         - In the id provide the id name that you will use in your pipeline next e.g KubeConfigFile
-  ### Triggers
-  **Trigger jobs based on certian event on our github repo e.g push/commit events**
+  ### Jenkins job configuration instructions
+  **Trigger a job to build docker image based on certian event on our github repo e.g push/commit events**
    #### Creating github webhook
    - On your **github repo** you want to trigger a pipeline on it's events navigate to your github repo url and click `settings`
    - on left pane click `webhook`
@@ -114,7 +116,7 @@
    - ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/a30f97ba-aa33-4f55-b23e-5cc3445a3afe)
   #### Creating pipeline trigger
    - On your jenkins web interface
-   - 
+  #### Creating Pipeline
 
   ### Jenkins shared library
    jenkins shared library is a group of methods(functions) that carry certain tasks these tasks are usually repeated alot during our coding so to avoid reinventing the wheel and boilerplate codes we define them once in a library and import those libraries whenever 
