@@ -49,7 +49,7 @@
 
 * In the **[handlers](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/main/ansible/roles/lab5/handlers)** that where you define a certain task to be carried out on a certain event when it's notified by the main task. 
 * **now** include your roles that you want to run and hosts that you want to manage inside the main **[playbook.yml](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/lab5.yml)**. 
-* **Time to run** `ansible-playbook -i /path/to/inventory_file playbook.yml`
+* **Time to run** `ansible-playbook -i /path/to/inventory_file your_playbook.yml`
 
 
  
