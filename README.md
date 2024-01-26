@@ -25,6 +25,16 @@
 - [Ansible](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#ansible)
    - [Ansible Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#ansible-setup-instructions)
    - [Architecture overview](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#understanding-ansible-roles-architecture)
+- [Jenkins](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins)
+  - [Jenkins Setup instructions]
+  - [download required plugins]
+  - [configuring credentials]
+  - [jenkins shared library]
+  - [triggers]
+     - [creating github webhook]
+  - [pipeline]
+      - [importing and using shared library]
+
    
 
 
