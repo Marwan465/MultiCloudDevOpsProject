@@ -38,5 +38,6 @@ this where your add the hosts you want to manage using ansilbe \
   ##### View your role structure
   Run `tree` to display your command structure
 #### understanding ansible roles structure
+ansible role divides your playbook into smaller chunks where each chunk serve a certain role which makes it more readable and easier to maintain without messing up the whole playbook
 
  
