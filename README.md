@@ -8,6 +8,8 @@
 [JenkinsFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/jenkinsfile) \
 [DockerFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/Dockerfile) \
 [Jenkins job configuration instructions for building Docker image on code commits](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-job-configuration-instructions)
+[Instructions for setting up centralized logging]()
+[Instructions for AWS integration in the Terraform Code]()
 
 ### Goals 
 - provision AWS resources using Terraform
@@ -40,6 +42,8 @@
 - [Pipeline](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#pipeline)
      - [Importing and using shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#importing-and-using-shared-library)
 - [Docker](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#docker)
+- [Monitoring and Logging]()
+- [AWS Integration]()
 
    
 
@@ -184,4 +188,6 @@ stage('Building our image') {
 ## Docker
 - **[Setting up docker](https://docs.docker.com/engine/install/)**
 - **[Repo used in the project](https://hub.docker.com/repositories/marwan512)**
+## Monitoring and Logging
+## AWS Integration
  
