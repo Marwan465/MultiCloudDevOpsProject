@@ -159,6 +159,9 @@ stage('Building our image') {
        - **Credentials** leave the default if the repo is public or add your configure credentials
        - **Repository HTTPS URL** provide your repo url that has the library
        - **Apply** and **Save**
+       - ![422628433_651172903692243_8022943870626548500_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/a46a6571-28d9-402f-b6a0-f0a691f1c930)
+       - ![420709518_220382544397726_3829107196365714049_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/04e27ff8-ad7a-4467-9a3f-9f4755eed406)
+
      
 
   ### Pipeline
