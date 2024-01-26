@@ -27,13 +27,13 @@
    - [Architecture overview](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#understanding-ansible-roles-architecture)
 - [Jenkins](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins)
   - [Jenkins Setup instructions]()
-  - [download required plugins]()
-  - [configuring credentials]()
-  - [jenkins shared library]()
-  - [triggers]()
-     - [creating github webhook]()
-  - [pipeline]()
-      - [importing and using shared library]()
+  - [Download required plugins]()
+  - [Configuring credentials]()
+  - [Jenkins shared library]()
+  - [Triggers]()
+     - [Creating github webhook]()
+  - [Pipeline]()
+      - [Importing and using shared library]()
 
    
 
@@ -69,6 +69,8 @@
 * **Now** include your roles that you want to run and hosts that you want to manage inside the main **[playbook.yml](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/lab5.yml)**. 
 * **Time to run** `ansible-playbook -i /path/to/inventory_file your_playbook.yml`
 ## Jenkins
-
+  ### Jenkins Setup instructions
+  ### Download required plugins
+  ### Configuring credentials
 
  
