@@ -78,7 +78,7 @@
     - Then reload your firewall to apply the changes  `firewall-cmd --reload`
     - Check your new changes `firewall-cmd --list-all`
     - start jenkins `systemctl enable --now Jenkins`
-   > The enable subcommand doesn't start a service, it only marks it to start automatically at boot. To enable and start a service at the same time, use the --now option
+       > The enable subcommand doesn't start a service, it only marks it to start automatically at boot. To enable and start a service at the same time, use the --now option
     - unlock jenkins `cat /var/lib/jenkins/secrets/initialAdminPassword` copy the password and used in jenkins web interface next step
   - on your browser
      - navigate to your_host_that_jenkins_is_installed:8080 to open jenkins web interface and use the password you copied from the previous step
