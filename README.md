@@ -42,6 +42,11 @@
 - [Pipeline](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#pipeline)
      - [Importing and using shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#importing-and-using-shared-library)
 - [Docker](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#docker)
+- [Terraform](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev?tab=readme-ov-file#terraform)
+   - [Terraform Setup instructions]()
+   - [Aws-cli Setup instructions]()
+   - [AWS configure Access keys and region]()
+   - [Terraform Module Architecture]()
 - [Monitoring and Logging](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev#monitoring-and-logging)
 - [AWS Integration](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev#aws-integration)
 
@@ -189,6 +194,10 @@ stage('Building our image') {
 - **[Setting up docker](https://docs.docker.com/engine/install/)**
 - **[Repo used in the project](https://hub.docker.com/repositories/marwan512)**
 ## Terraform
+ ### Terraform Setup instructions
+ ### Aws-cli Setup instructions
+ ### AWS configure Access keys and region
+ ### Terraform Module Architecture
 ## Monitoring and Logging
 ## AWS Integration
  
