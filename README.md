@@ -72,6 +72,11 @@
 ## Jenkins
   ### Jenkins Setup instructions
   - [choose your host and follow the guide on jenkins website](https://www.jenkins.io/download/)
+  - on linux
+    - Make sure to allow **jenkins service** in your firewall  `firewall-cmd --add-service=jenkins --permanent`
+    - Or allow jenkins default port  `firewall-cmd  --add-port=8080/tcp --permanent`
+    - Then reload your firewall to apply the changes  `firewall-cmd --reload`
+    - Check your new changes `firewall-cmd --list-all`
   ### Download required plugins
   ### Configuring credentials
   ### Jenkins shared library
