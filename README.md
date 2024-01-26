@@ -103,6 +103,7 @@
         - **File** click browse and choose you **KubeConfig** file
         - In the id provide the id name that you will use in your pipeline next e.g KubeConfigFile
   ### Triggers
+  **Trigger jobs based on certian event on our github repo e.g push/commit events**
    #### Creating github webhook
    - On your **github repo** you want to trigger a pipeline on it's events navigate to your github repo url and click `settings`
    - on left pane click `webhook`
@@ -112,7 +113,8 @@
    - customize trigger events
    - ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/a30f97ba-aa33-4f55-b23e-5cc3445a3afe)
   #### Creating pipeline trigger
-             
+   - On your jenkins web interface
+   - 
 
   ### Jenkins shared library
    jenkins shared library is a group of methods(functions) that carry certain tasks these tasks are usually repeated alot during our coding so to avoid reinventing the wheel and boilerplate codes we define them once in a library and import those libraries whenever 
