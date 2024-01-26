@@ -83,6 +83,7 @@
   - on your browser
      - navigate to your_host_that_jenkins_is_installed:8080 to open jenkins web interface and use the password you copied from the previous step
      - install recommended plugins and then create an admin user
+  [for more detailed info on how to setup jenkins](https://www.linuxbuzz.com/install-jenkins-on-rhel-rockylinux-almalinux/)
   ### Download required plugins
   ### Configuring credentials
   ### Jenkins shared library
