@@ -8,8 +8,8 @@
 [JenkinsFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/jenkinsfile) \
 [DockerFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/Dockerfile) \
 [Jenkins job configuration instructions for building Docker image on code commits](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-job-configuration-instructions) \
-[Instructions for setting up centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev#monitoring-and-logging) \
-[Instructions for AWS integration in the Terraform Code](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev#aws-integration)
+[Instructions for setting up centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#monitoring-and-logging) \
+[Instructions for AWS integration in the Terraform Code](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-integration)
 
 ### Goals 
 - provision AWS resources using Terraform
@@ -42,13 +42,13 @@
 - [Pipeline](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#pipeline)
      - [Importing and using shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#importing-and-using-shared-library)
 - [Docker](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#docker)
-- [Terraform](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev?tab=readme-ov-file#terraform)
-   - [Terraform Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev?tab=readme-ov-file#terraform-setup-instructions)
-   - [Aws-cli Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev?tab=readme-ov-file#aws-cli-setup-instructions)
-   - [AWS configure Access keys and region](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev?tab=readme-ov-file#aws-configure-access-keys-and-region)
-   - [Terraform Module Architecture](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev?tab=readme-ov-file#terraform-module-architecture)
-- [Monitoring and Logging](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev#monitoring-and-logging)
-- [AWS Integration](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/dev#aws-integration)
+- [Terraform](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform)
+   - [Terraform Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform-setup-instructions)
+   - [Aws-cli Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-cli-setup-instructions)
+   - [AWS configure Access keys and region](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-configure-access-keys-and-region)
+   - [Terraform Module Architecture](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform-module-architecture)
+- [Monitoring and Logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#monitoring-and-logging)
+- [AWS Integration](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-integration)
 
    
 
