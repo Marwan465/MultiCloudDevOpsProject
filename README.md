@@ -30,7 +30,7 @@
  #### Ansible Roles
 > Roles let you automatically load related vars, files, tasks, handlers, and other Ansible artifacts based on a known file structure. After you group your content into roles, you can easily reuse them and share them with other users.
 #### Ansible inventory
-this where your add the hosts you want to manage using ansilbe \
+this where your add the hosts you want to manage using ansilbe and the connections variables to access that host if it was needed \
 [ansible inventory](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/hosts)
 
   ##### Start by creating a role
@@ -38,6 +38,10 @@ this where your add the hosts you want to manage using ansilbe \
   ##### View your role structure
   Run `tree` to display your command structure
 #### understanding ansible roles structure
-ansible role divides your playbook into smaller chunks where each chunk serve a certain role which makes it more readable and easier to maintain without messing up the whole playbook
+ansible role divides your playbook into smaller chunks where each chunk serve a certain role which makes it more readable and easier to maintain without messing up the whole playbook. \
+ansible role structure looks like this
+> ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/dbe11e6b-7be3-46bd-9caf-25300593384a)
+in the var file you list your variable to later be used
+
 
  
