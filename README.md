@@ -130,6 +130,21 @@ our project **ansible role** structure is \
      - **Apply** And **Save**
 
   #### Creating Pipeline
+  In your jenkinsfile add a script to build your image the script looks something like this 
+```  
+environment {
+  DockerRegistry = "docker.io/registryname"
+  tag = "latest"
+  image = "my-app"
+}
+stage('Building our image') {
+  steps{
+    script {
+      dockerImage = docker.build("${DockerRegistry}/${image}:${tag}")
+}
+}
+}
+``` 
 
   ### Jenkins shared library
    jenkins shared library is a group of methods(functions) that carry certain tasks these tasks are usually repeated alot during our coding so to avoid reinventing the wheel and boilerplate codes we define them once in a library and import those libraries whenever 
