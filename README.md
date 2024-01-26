@@ -64,8 +64,8 @@
     - Run `tree` provided with your role path to display your ansible role structure
 ### Understanding ansible roles architecture
 **ansible role** divides your playbook into smaller chunks where each chunk serve a certain role which makes it more readable and easier to maintain without messing up the whole playbook. \
-**ansible role** structure looks like this
- ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/dbe11e6b-7be3-46bd-9caf-25300593384a) \
+our project **ansible role** structure is
+![419479421_1744307166068783_306971298928101798_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/f9fa24b5-8283-43a4-8bb8-f71df1966dbc) \
 * In the **[vars](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/main/ansible/roles/lab5/vars)** and **defaults** **main.yml** file you list your variables to later be used 
   * **Note**  **vars** have the higher priority so if **vars** and **defaults** have the same variable defined ansible will use the one in **vars**.
 * In the **[tasks](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/main/ansible/roles/lab5/tasks)** dir you define your tasks that will be executed on your managed hosts described in your **inventory** file you can either implement all your tasks in the **main.yml** or in other files.yml and include those files inside the **main.yml**.
