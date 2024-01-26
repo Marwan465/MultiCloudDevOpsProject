@@ -21,6 +21,8 @@
 - using dockerfile to build our image and use our docker image to create our containerized app
 - Describe and define jenkins shared library & configure jenkins to use the library.
 - Describe jenkins pipelines,  connect jenkins to github,docker,openshift using their plugins,configure jenkins credentials to authenticate, trigger the pipeline on certain events and how to import and use our jenkins shared library in the pipeline
+### Sections
+- [Ansible](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#ansible)
 
 
 
