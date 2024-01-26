@@ -38,11 +38,12 @@ this where your add the hosts you want to manage using ansilbe and the connectio
   ##### View your role structure
   Run `tree` to display your command structure
 #### understanding ansible roles structure
-ansible role divides your playbook into smaller chunks where each chunk serve a certain role which makes it more readable and easier to maintain without messing up the whole playbook. \
-ansible role structure looks like this
+**ansible role** divides your playbook into smaller chunks where each chunk serve a certain role which makes it more readable and easier to maintain without messing up the whole playbook. \
+**ansible role** structure looks like this
  ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/dbe11e6b-7be3-46bd-9caf-25300593384a) \
-in the vars and defaults main.tf file you list your variables to later be used \
-**Note**  vars have the higher priority so if vars and defaults have the same variable defined ansible will use the one in vars
+* In the **vars** and **defaults** **main.tf** file you list your variables to later be used 
+  * **Note**  **vars** have the higher priority so if **vars** and **defaults** have the same variable defined ansible will use the one in **vars** 
+* In the **task** dir you define yous tasks that will be executed you can either implement all your tasks in the **main.tf** or in other files.tf and include those files inside the **main.tf**
 
 
  
