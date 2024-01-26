@@ -7,7 +7,7 @@
 [jenkins shared library](https://github.com/Marwan465/jenkins-simple-library) \
 [JenkinsFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/jenkinsfile) \
 [DockerFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/Dockerfile) \
-[Jenkins job configuration instructions for building Docker image on code commits]()
+[Jenkins job configuration instructions for building Docker image on code commits](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-job-configuration-instructions)
 
 ### Goals 
 - provision AWS resources using Terraform
@@ -30,10 +30,10 @@
   - [Jenkins Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-setup-instructions)
   - [Download required plugins](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#download-required-plugins)
   - [Configuring credentials](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#configuring-credentials)
-- [Jenkins job configuration instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#triggers)
+- [Jenkins job configuration instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-job-configuration-instructions)
      - [Creating github webhook](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#creating-github-webhook)
      - [Creating pipeline trigger](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#creating-pipeline-trigger)
-     - [Creating Pipeline]()
+     - [Creating Pipeline](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#creating-pipeline)
 - [Jenkins shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-shared-library)
      - [Configure jenkins shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#configure-jenkins-shared-library)
 - [Pipeline](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#pipeline)
