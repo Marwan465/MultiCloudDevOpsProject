@@ -73,10 +73,10 @@
   ### Jenkins Setup instructions
   ### Download required plugins
   ### Configuring credentials
-- ### Jenkins shared library
-    - #### Configure jenkins shared library
-- ### Triggers
-  - #### Creating github webhook
-- ### Pipeline
-  - #### Importing and using shared library
+  ### Jenkins shared library
+   #### Configure jenkins shared library
+  ### Triggers
+   #### Creating github webhook
+  ### Pipeline
+   #### Importing and using shared library
  
