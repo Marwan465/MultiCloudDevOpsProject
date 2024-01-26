@@ -104,17 +104,20 @@
   ### Triggers
    #### Creating github webhook
   ### Jenkins shared library
-   jenkins shared library is a group of methods(functions) that carry certain tasks these tasks are usually repeated alot during our coding so to avoid reinventing the wheel and boilerplate codes we define them once in a library and import those libraries whenever we need
+   jenkins shared library is a group of methods(functions) that carry certain tasks these tasks are usually repeated alot during our coding so to avoid reinventing the wheel and boilerplate codes we define them once in a library and import those libraries whenever 
+    we need \
    e.g **[the library we are using in our project](https://github.com/Marwan465/jenkins-simple-library)**
    #### Configure jenkins shared library
-   so now we need to be able to import this library in our pipeline so we need to point jenkins to it
-    - On jenkins web interface navigate to `manage jenkins` --> `System` --> scroll down and locate `Global Pipeline libraries` 
-      - provide your library name this name will be used later to import the library and the library version
-      - **Retrieval method** pick **Modern SCM**
-      - **Source Code Management** choose **Github** ( or whatever SCM you have you library at)
-      - **Credentials** leave the default if the repo is public or add your configure credentials
-      - **Repository HTTPS URL** provide your repo url that has the library
-      - **Apply** and **Save**
+   - so now we need to be able to import this library in our pipeline so we need to point jenkins to it.
+     - On jenkins web interface navigate to `manage jenkins` --> `System` --> scroll down and locate `Global Pipeline libraries`
+       - provide your library name this name will be used later to import the library and the library version
+       - **Retrieval method** pick **Modern SCM**
+       - **Source Code Management** choose **Github** ( or whatever SCM you have you library at)
+       - **Credentials** leave the default if the repo is public or add your configure credentials
+       - **Repository HTTPS URL** provide your repo url that has the library
+       - **Apply** and **Save**
+     
+
   ### Pipeline
    #### Importing and using shared library
 ## Docker
