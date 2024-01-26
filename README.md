@@ -116,6 +116,19 @@ our project **ansible role** structure is \
    - ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/a30f97ba-aa33-4f55-b23e-5cc3445a3afe)
   #### Creating pipeline trigger
    - On your jenkins web interface
+     - Click `New Item` and create a pipeline
+        - ![422628438_912282617108922_2396793395277846722_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/21fce714-e6cd-4f04-b46b-aefdb188a3d6)
+     - Inside your pipeline click `Configure`
+        - ![414838815_298759749448584_8842013607062473531_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/b930a463-7fc1-4a45-981f-c7a953dc6131)
+     - Scroll down to **Build Triggers** and tick **GitHub hook trigger for GITScm polling** this will make the github hook we created above notify jenkins when an event happens
+        -   ![415403153_935442858018918_4788590869331520208_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/bcc048db-aaf0-405f-b99b-fbfb20089a0f)
+        -   **Note** you can tick **Poll SCM** options so that **jenkins** will poll the **SCM**
+     - Scroll down again to **Pipeline**
+        - In **Definition drop down menu** select **Pipeline script from SCM**
+        - In **SCM** drop down menu choose **Git** provide your **github repo url** that has the **jenkinsfile** and make sure to select the right **branch**
+        - ![416435539_759218428967733_3757825706753134672_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/7c17c793-9633-477f-8cc7-330230ff0325) ![416358576_1599111860492951_6964332434369414991_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/11579033-edb9-4cb3-bdf7-1a507e4b2609)
+     - **Apply** And **Save**
+
   #### Creating Pipeline
 
   ### Jenkins shared library
