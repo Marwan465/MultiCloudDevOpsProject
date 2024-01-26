@@ -26,12 +26,17 @@
 
 
 ## Ansible
- ### Ansible Roles
+> Ansible is the simplest way to automate apps and IT infrastructure. Application Deployment + Configuration Management + Continuous Delivery
+ #### Ansible Roles
 > Roles let you automatically load related vars, files, tasks, handlers, and other Ansible artifacts based on a known file structure. After you group your content into roles, you can easily reuse them and share them with other users.
+#### Ansible inventory
+this where your add the hosts you want to manage using ansilbe \
+[ansible inventory](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/hosts)
 
-
-  #### Start by creating a role
+  ##### Start by creating a role
   Run the following command `ansible-galaxy init <role_name>`
-  #### View your role structure
+  ##### View your role structure
   Run `tree` to display your command structure
+#### understanding ansible roles structure
+
  
