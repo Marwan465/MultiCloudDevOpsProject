@@ -25,6 +25,7 @@
 ### Sections
 - [Ansible](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#ansible)
    - [Ansible Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#ansible-setup-instructions)
+      - [configuring ansible to access ec2]()
    - [Architecture overview](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#understanding-ansible-roles-architecture)
 - [Jenkins](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins)
   - [Jenkins Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-setup-instructions)
@@ -53,7 +54,8 @@
 - Start by installing ansible  `sudo dnf install ansible` note that galaxy collections are part of t ansible installation \
 - check your ansible version `ansible --version`
 - creating **[ansible inventory](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/hosts)**
-     - this where you add the **hosts** you want to manage using ansilbe and the **connections variables** to access those hosts if it was needed 
+     - this where you add the **hosts** you want to manage using ansilbe and the **connections variables** to access those hosts if it was needed
+  #### configuring ansible to access ec2
      - provide your ec2-user and key.pem file you associated with the ec2 on creation
          - **Note** ec2-user is the default name so if you changed it provide the new name
          - **Note** the key provided by aws for the ec2 can be downloaded one time only so if you lost it create another one
