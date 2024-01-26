@@ -32,10 +32,13 @@
 ### Ansible Setup instructions
 - Start by installing ansible  `sudo dnf install ansible` note that galaxy collections are part of t ansible installation \
 - check your ansible version `ansible --version`
-- creating **Ansible inventory**
-     - this where you add the hosts you want to manage using ansilbe and the connections variables to access those hosts if it was needed \
-        [ansible inventory](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/hosts)       
-- Start by creating a **role**
+- creating **[ansible inventory](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/hosts)**
+     - this where you add the **hosts** you want to manage using ansilbe and the **connections variables** to access those hosts if it was needed 
+     - provide your ec2-user and key.pem file you associated with the ec2 on creation
+         - **Note** ec2-user is the default name so if you changed it provide the new name
+         - **Note** the key provided by aws for the ec2 can be downloaded one time only so if you lost it create another one
+      
+- Start by creating a **[role](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/main/ansible/roles/lab5)**
     - Run the following command `ansible-galaxy init <role_name>`
 - View your role structure
     - Run `tree` provided with your role path to display your ansible role structure
