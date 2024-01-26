@@ -31,6 +31,7 @@
   - [Configuring credentials](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#configuring-credentials)
 - [Triggers](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#triggers)
      - [Creating github webhook](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#creating-github-webhook)
+     - [Creating pipeline trigger]()
 - [Jenkins shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-shared-library)
      - [Configure jenkins shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#configure-jenkins-shared-library)
 - [Pipeline](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#pipeline)
@@ -102,8 +103,6 @@
         - **File** click browse and choose you **KubeConfig** file
         - In the id provide the id name that you will use in your pipeline next e.g KubeConfigFile
   ### Triggers
-  - On your jenkins web interface
-  - 
    #### Creating github webhook
    - On your **github repo** you want to trigger a pipeline on it's events navigate to your github repo url and click `settings`
    - on left pane click `webhook`
@@ -111,7 +110,8 @@
    - Content type select `application/json`
    - trigger on push
    - customize trigger events
-   - ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/a30f97ba-aa33-4f55-b23e-5cc3445a3afe)   
+   - ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/a30f97ba-aa33-4f55-b23e-5cc3445a3afe)
+  #### Creating pipeline trigger
              
 
   ### Jenkins shared library
