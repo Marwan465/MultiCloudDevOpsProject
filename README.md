@@ -86,7 +86,21 @@
      - install recommended plugins and then create an admin user. \
   [for more detailed info on how to setup jenkins](https://www.linuxbuzz.com/install-jenkins-on-rhel-rockylinux-almalinux/)
   ### Download required plugins
+   - On jenkins web interface navigate to `manage jenkins` --> `plugins`--> `Available plugins` download docker,github and redhat necessary plugins
+      - docker commons plugin, docker API plugin, docker plugin, docker-build-step, docker compose build step plugin
+      - github plugin, github api plugin ...
+    **Note** some plugin might be already installed when we were setting up our jenkins
   ### Configuring credentials
+  - On jenkins web interface navigate to `manage jenkins` --> `Credentials` --> `system` --> `click your desired domain` --> `Add Credentials`
+  - On the new credential template
+    - **docker hub credentials**
+      - **kind** choose **username with password**
+      - provide your dockerhub username and password
+      - in the id provide the id name that you will use in your pipeline next e.g dockerhub_id
+    - **openshift cluster credentials**
+        - **kind** choose **Secret File**
+        - **File** click browse and choose you **KubeConfig** file
+        - in the id provide the id name that you will use in your pipeline next e.g KubeConfigFile
   ### Jenkins shared library
    #### Configure jenkins shared library
   ### Triggers
