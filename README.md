@@ -188,6 +188,7 @@ stage('Building our image') {
 ## Docker
 - **[Setting up docker](https://docs.docker.com/engine/install/)**
 - **[Repo used in the project](https://hub.docker.com/repositories/marwan512)**
+## Terraform
 ## Monitoring and Logging
 ## AWS Integration
  
