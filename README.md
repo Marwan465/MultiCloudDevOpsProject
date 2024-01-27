@@ -271,7 +271,7 @@ stage('Building our image') {
    - Administrator permissions.
    - Access to the OpenShift Container Platform web console.
  - **Procedure**
-   - Installing **Red Hat OpenShift Logging** Operator
+   - **Installing Red Hat OpenShift Logging Operator**
     > - In the OpenShift Container Platform web console, click **Operators** → **OperatorHub**. 
     > - Type **OpenShift Logging** in the Filter by keyword box. 
     > - Choose **Red Hat OpenShift Logging** from the list of available Operators, and click Install. 
