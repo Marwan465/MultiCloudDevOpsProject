@@ -112,7 +112,7 @@ our project **ansible role** structure is \
 ## Jenkins
   ### Jenkins Setup instructions
   - [choose your host and follow the guide on jenkins website](https://www.jenkins.io/download/)
-  - on linux
+  - **on linux**
     - Make sure to allow **jenkins service** in your firewall  `firewall-cmd --add-service=jenkins --permanent`
     - Or allow jenkins default port  `firewall-cmd  --add-port=8080/tcp --permanent`
     - Then reload your firewall to apply the changes  `firewall-cmd --reload`
@@ -120,7 +120,7 @@ our project **ansible role** structure is \
     - start jenkins `systemctl enable --now Jenkins`
        > The enable subcommand doesn't start a service, it only marks it to start automatically at boot. To enable and start a service at the same time, use the --now option
     - unlock jenkins `cat /var/lib/jenkins/secrets/initialAdminPassword` copy the password and used in jenkins web interface next step
-  - on your browser
+  - **on your browser**
      - navigate to your_host_that_jenkins_is_installed:8080 to open jenkins web interface and use the password you copied from the previous step
      - install recommended plugins and then create an admin user. \
   [for more detailed info on how to setup jenkins](https://www.linuxbuzz.com/install-jenkins-on-rhel-rockylinux-almalinux/)
