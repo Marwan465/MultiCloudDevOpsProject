@@ -8,7 +8,7 @@
 [JenkinsFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/jenkinsfile) \
 [DockerFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/Dockerfile) \
 [Jenkins job configuration instructions for building Docker image on code commits](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-job-configuration-instructions) \
-[Instructions for setting up centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#monitoring-and-logging) \
+[Instructions for setting up centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#setup-instructions-for-centralized-logging--openshift-container-platform-414-) \
 [Instructions for AWS integration in the Terraform Code](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-integration)
 
 ### Goals 
@@ -54,7 +54,7 @@
    - [Terraform Module Architecture](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform-module-architecture)
 - [Monitoring and Logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#monitoring-and-logging)
    - [Logging architecture](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#logging-architecture)
-   - 
+   - [Setup instruction for centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#setup-instructions-for-centralized-logging--openshift-container-platform-414-)
 - [AWS Integration](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-integration)
 
    
