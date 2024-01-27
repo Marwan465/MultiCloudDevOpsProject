@@ -336,3 +336,15 @@ stage('Building our image') {
      s3:PutObject on arn:aws:s3:::mybucket/path/to/my/key
      s3:DeleteObject on arn:aws:s3:::mybucket/path/to/my/key
 ```
+- Include the IAM role in the Terraform backend state
+  ```
+   backend "s3" {
+    bucket         	   = "tfstate-bucket-1"
+    key              	   = "/path/to/my/key"   // **Note** this is where the terraform state will be written to so it has to be unique to ensure that state files do not overwrite each other, it uses path-like structure to organize state files within the S3 bucket.
+    region         	   = "us-east-1"
+    encrypt        	   = true
+    role_arn   = "arn:aws:iam::ACCOUNT-ID:role/myrole"
+    
+  }
+  
+  ```
