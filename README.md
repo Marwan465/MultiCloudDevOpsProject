@@ -266,5 +266,29 @@ stage('Building our image') {
  > The log store stores log data for analysis and is the default output for the log forwarder. You can use the default **LokiStack** log store, the **legacy Elasticsearch** log store, or forward logs to additional external log stores.
  #### Visualization
  > You can use a UI component to view a visual representation of your log data. The UI provides a graphical interface to search, query, and view stored logs. The OpenShift Container Platform web console UI is provided by enabling the OpenShift Container Platform console plugin.
+### Setup instructions for centralized logging ( OpenShift Container Platform 4.14 )
+ - **Prerequisites**
+   - Administrator permissions.
+   - Access to the OpenShift Container Platform web console.
+ - **Procedure**
+    > In the OpenShift Container Platform web console, click **Operators** → **OperatorHub**. \
+    > Type **OpenShift Logging** in the Filter by keyword box. \
+    > Choose **Red Hat OpenShift Logging** from the list of available Operators, and click Install. \
+    > Ensure that A specific namespace on the cluster is selected under Installation mode. \
+    > Ensure that Operator recommended namespace is **openshift-logging** under Installed Namespace. \
+    > Select Enable operator recommended cluster monitoring on this namespace. 
+     > - This option sets the openshift.io/cluster-monitoring: "true" label in the Namespace object. You must select this option to ensure that cluster monitoring scrapes the openshift-logging namespace.
+   - **Creating a ClusterLogging object by using the web console**
+    > After you have installed the logging Operators, you must create a ClusterLogging custom resource to configure log storage, visualization, and the log collector for your cluster.
+      > Navigate to the **Custom Resource Definitions** page.
+      > On the **Custom Resource Definitions** page, click **ClusterLogging**.
+      > On the **Custom Resource Definition** details page, select **View Instances** from the **Actions** menu
+      > On the **ClusterLoggings** page, click Create **ClusterLogging**.    
+    **Now** open your **ClusterLoggings** yaml and scroll to **collection** section and type your **Collector Implementation** either **vector** or **fluentd** Then scroll to **logstore** sections and type your log operator either **loki** or **elasticsearch**
+    **Note** > Fluentd and ElasticSearch are deprecated and are planned to be removed
+ - For more detailed info and installation of other versions please refer to [openshift docs for logging](https://docs.openshift.com/container-platform/4.14/logging/cluster-logging-deploying.html) & [openshift docs for log storages](https://docs.openshift.com/container-platform/4.14/logging/log_storage/installing-log-storage.html)
+    
+
+
 ## AWS Integration
  
