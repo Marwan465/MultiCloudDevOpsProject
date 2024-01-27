@@ -58,7 +58,6 @@
    - [Logging architecture](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#logging-architecture)
    - [Setup instruction for centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#setup-instructions-for-centralized-logging--openshift-container-platform-414-)
 - [AWS Integration](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#aws-integration)
-   - [Prerequisites]()
    - [S3 Terraform Backend state](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#s3-terraform-backend-state)
    - [Integrate CloudWatch for monitoring](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#integrate-cloudwatch-for-monitoring)
      
