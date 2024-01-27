@@ -11,7 +11,7 @@
 - [Instructions for setting up centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#monitoring-and-logging) 
 - [Instructions for AWS integration in the Terraform Code](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-integration)
   - [S3 Terraform Backend state](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#s3-terraform-backend-state)
-  - [Integrate CloudWatch for monitoring]()
+  - [Integrate CloudWatch for monitoring](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#integrate-cloudwatch-for-monitoring)
 
 ### Goals 
 - provision AWS resources using Terraform
