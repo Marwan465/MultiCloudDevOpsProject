@@ -53,6 +53,8 @@
    - [AWS configure Access keys and region](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-configure-access-keys-and-region)
    - [Terraform Module Architecture](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform-module-architecture)
 - [Monitoring and Logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#monitoring-and-logging)
+   - [Logging architecture]()
+   - 
 - [AWS Integration](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-integration)
 
    
@@ -257,5 +259,12 @@ stage('Building our image') {
    ```
 
 ## Monitoring and Logging
+### Logging architecture
+ ####  Collector
+ > The collector is a daemonset that deploys pods to each OpenShift Container Platform node. It collects log data from each node, transforms the data, and forwards it to configured outputs. You can use the **Vector** collector or the **legacy Fluentd** collector.
+ #### Log store
+ > The log store stores log data for analysis and is the default output for the log forwarder. You can use the default **LokiStack** log store, the **legacy Elasticsearch** log store, or forward logs to additional external log stores.
+ #### Visualization
+ > You can use a UI component to view a visual representation of your log data. The UI provides a graphical interface to search, query, and view stored logs. The OpenShift Container Platform web console UI is provided by enabling the OpenShift Container Platform console plugin.
 ## AWS Integration
  
