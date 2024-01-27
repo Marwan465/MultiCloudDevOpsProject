@@ -203,7 +203,7 @@ stage('Building our image') {
   ### Pipeline
    #### Importing and using shared library
    - inside your pipline import your library `@Library('the_name_of_your_library_you_configure_in_Jenkins@library_version') _`
-   - To call a method use your vars file name for e.g in our library (below image) to call the method **buildDockerImage** which is defined in **dockerize.groovy** in your pipeline you would call it as `dockerize.buildDockerImage(registry, image)`
+   - To call a method use your vars file name for e.g in our library (below image) to call the method **buildDockerImage** which is defined in **dockerize.groovy** in your pipeline you would call it as `dockerize.buildDockerImage(registry)`
    - ![419926150_343121968625879_8202173263761135491_n (1)](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/eae6bc26-cf24-41b3-80ec-53dc61dc02ab)
 
   **Note** groovy can be dynamically typed which mean you don't have to state the type of the variable before declaring it
