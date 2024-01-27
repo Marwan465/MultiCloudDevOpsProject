@@ -242,6 +242,15 @@ stage('Building our image') {
  - ![420092284_688208766838917_4832216871114481797_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/91d1b44f-40f5-4140-b0ab-028210845ef0)
 
  ### Terraform Module Architecture
+ - Now it's time to create our Terraform Module Structure it looks something like this
+ - ![420697653_314612114363608_4412397192236509058_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/3f7b9cef-b3bb-46e4-b425-23d42288cca8)
+    - 1- Is the **Root main.tf** specifies the modules to pass and recieve variable from those modules
+    - 2- The **Root output.tf** these are the variables passed down to the **Root main.tf** by the **modules**
+    - 3- The **Root variables.tf** are the variables passed by the **Root main.tf** to the modules
+        - **Note** if some variable wasn't assigned a value in the **Root variables.tf** you will be prompt to  provide that value when you run the **Terraform module**
+    - 4- The values the **Modules** will pass to **Root main.tf**
+    - 5- The values the **Root main.tf** passes to the **Modules**
+
 ## Monitoring and Logging
 ## AWS Integration
  
