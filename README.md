@@ -277,15 +277,15 @@ stage('Building our image') {
     > - Choose **Red Hat OpenShift Logging** from the list of available Operators, and click Install. 
     > - Ensure that A specific namespace on the cluster is selected under Installation mode. 
     > - Ensure that Operator recommended namespace is **openshift-logging** under Installed Namespace. 
-    > - Select Enable operator recommended cluster monitoring on this namespace. 
-     > - This option sets the openshift.io/cluster-monitoring: "true" label in the Namespace object. You must select this option to ensure that cluster monitoring scrapes the openshift-logging namespace.
    - **Creating a ClusterLogging object by using the web console**
-    > After you have installed the logging Operators, you must create a ClusterLogging custom resource to configure log storage, visualization, and the log collector for your cluster.
-      > - Navigate to the **Custom Resource Definitions** page.
-      > - On the **Custom Resource Definitions** page, click **ClusterLogging**.
-      > - On the **Custom Resource Definition** details page, select **View Instances** from the **Actions** menu
-      > - On the **ClusterLoggings** page, click Create **ClusterLogging**.    
- - **Now** open your **ClusterLoggings** yaml and scroll to **collection** section and type your **Collector Implementation** either **vector** or **fluentd** Then scroll to **logstore** sections and type your log operator either **loki** or **elasticsearch** ( assuming you installed loki operator)
+     - After Installing Red Hat OpenShift Logging Operator click **Operators** → **Installed Operators** → **Red Hat OpenShift Logging**
+     - Click **Cluster Logging** Tab → **Create ClusterLogging**
+     - ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/ad03be45-cab9-400e-88ab-902b98839bd7)
+     - In **Collection** section → **Collector Implementation** drop down menu choose either **vector** or **fluentd**
+     - ![cluster logging collection](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/ddebedc4-ecd5-4412-9f37-200745e2276b)
+     - Scroll down to **LogStore** section select your logstore and make sure it's installed in your **Installed Operators**
+     - ![cluster logging logstore and virtualization](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/00a75e76-e340-499a-b840-a9956b10f909)
+ 
  - **Note**
     - > Fluentd and ElasticSearch are deprecated and are planned to be removed
  - For more detailed info and installation of other versions please refer to [openshift docs for logging](https://docs.openshift.com/container-platform/4.14/logging/cluster-logging-deploying.html) & [openshift docs for log storages](https://docs.openshift.com/container-platform/4.14/logging/log_storage/installing-log-storage.html)
