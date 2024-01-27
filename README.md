@@ -356,3 +356,36 @@ terraform {
   
 ```
 ### Integrate CloudWatch for monitoring
+- Create EC2 using Terraform
+```
+resource "aws_instance" "MY_EC2" {
+  ami             = var.ami
+  instance_type   = var.instance_type
+  subnet_id       = var.subnet_id
+  key_name        = var.key_name
+
+  vpc_security_group_ids = [var.security_group_id]
+
+  tags = {
+    Name = "my-ec2-instance"
+  }
+}
+```
+- Create Cloudwatch Alarm Metric
+```
+resource "aws_cloudwatch_metric_alarm" "ec2_cpu" {
+     alarm_name                = "cpu-utilization"
+     comparison_operator       = "GreaterThanOrEqualToThreshold"
+     evaluation_periods        = "2"
+     metric_name               = "CPUUtilization"
+     namespace                 = "AWS/EC2"
+     period                    = "120" #seconds
+     statistic                 = "Average"
+     threshold                 = "80"
+     alarm_description         = "This metric monitors ec2 cpu utilization"
+     insufficient_data_actions = []
+dimensions = {
+       InstanceId = aws_instance.MY_EC2.id
+     }
+}
+```
