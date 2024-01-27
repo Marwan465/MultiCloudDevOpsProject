@@ -29,6 +29,7 @@
    - [Ansible Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#ansible-setup-instructions)
       - [configuring ansible to access ec2](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#configuring-ansible-to-access-ec2)
    - [Architecture overview](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#understanding-ansible-roles-architecture)
+   - [Troubleshooting]
 - [Jenkins](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins)
   - [Jenkins Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-setup-instructions)
   - [Download required plugins](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#download-required-plugins)
@@ -94,6 +95,17 @@ our project **ansible role** structure is \
  ```
   ansible-playbook -i hosts lab5.yml
   ```
+ ### Troubleshooting
+  - If you encountred an issue with key.pem permission make sure it has the following permissions
+    ```
+    chmod 600 yourkey.pem
+    ```
+  - you might in some scenarios need python and boto3 packages
+    ```
+    dnf install python3
+    dnf install python3-pip
+    pip3 install boto3
+    ```
 ## Jenkins
   ### Jenkins Setup instructions
   - [choose your host and follow the guide on jenkins website](https://www.jenkins.io/download/)
