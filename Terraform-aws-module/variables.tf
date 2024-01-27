@@ -1,16 +1,16 @@
 
-variable "access_key" {
-  description = "IAM acess key"
+# variable "access_key" {
+#   description = "IAM acess key"
  
-}
-variable "secret_key" {
-  description = "IAM secret key"
+# }
+# variable "secret_key" {
+#   description = "IAM secret key"
   
-}
-variable "region" {
-  description = "aws region"
-  default     = "us-east-1"
-}
+# }
+# variable "region" {
+#   description = "aws region"
+#   default     = "us-east-1"
+# }
 
 variable "vpc_cidr_block" {
   description = "CIDR block for the VPC"
