@@ -53,7 +53,7 @@
    - [AWS configure Access keys and region](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-configure-access-keys-and-region)
    - [Terraform Module Architecture](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform-module-architecture)
 - [Monitoring and Logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#monitoring-and-logging)
-   - [Logging architecture]()
+   - [Logging architecture](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#logging-architecture)
    - 
 - [AWS Integration](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-integration)
 
