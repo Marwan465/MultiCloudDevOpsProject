@@ -2,7 +2,7 @@
   ![421734725_788162733339542_9095234959083725977_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/430dcfdd-6858-4a9c-8711-199f87ec8a41) 
 
 ### Deliverables
-- [Terraform](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform) 
+- [Terraform Module](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/main/Terraform-aws-module) 
 - [Ansible role](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/main/ansible) 
 - [jenkins shared library](https://github.com/Marwan465/jenkins-simple-library) 
 - [JenkinsFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/jenkinsfile) 
