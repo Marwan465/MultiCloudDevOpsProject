@@ -278,7 +278,7 @@ stage('Building our image') {
     > - Ensure that A specific namespace on the cluster is selected under Installation mode. 
     > - Ensure that Operator recommended namespace is **openshift-logging** under Installed Namespace. 
    - **Creating a ClusterLogging object by using the web console**
-     - After Installing Red Hat OpenShift Logging Operator click **Operators** → **Installed Operators** → **Red Hat OpenShift Logging**
+     - After **Installing Red Hat OpenShift** Logging Operator click **Operators** → **Installed Operators** → **Red Hat OpenShift Logging**
      - Click **Cluster Logging** Tab → **Create ClusterLogging**
      - ![elbashayer_image_1535908697](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/ad03be45-cab9-400e-88ab-902b98839bd7)
      - In **Collection** section → **Collector Implementation** drop down menu choose either **vector** or **fluentd**
