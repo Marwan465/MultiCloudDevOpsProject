@@ -56,6 +56,11 @@
    - [Logging architecture](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#logging-architecture)
    - [Setup instruction for centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#setup-instructions-for-centralized-logging--openshift-container-platform-414-)
 - [AWS Integration](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-integration)
+   - [Prerequisites]()
+   - [Set Up S3]()
+   - [Create an IAM Role]()
+   - [Configure Terraform Backend]()
+     
 
    
 
@@ -297,4 +302,37 @@ stage('Building our image') {
 
 
 ## AWS Integration
- 
+ ### Prerequisites
+ - AWS-cli
+ - Terraform
+ - IAM role
+ ### Procedure
+ - Create s3 bucket either [Manualy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html) or using terraform
+```
+   resource "aws_s3_bucket" "tfstateBucket" {
+  bucket = "tfstate-bucket-1"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+```
+ -  Include the backend block in the Terraform configuration
+```
+  backend "s3" {
+    bucket         	   = "tfstate-bucket-1"
+    key              	   = "/path/to/my/key"   // **Note** this is where the terraform state will be written to so it has to be unique to ensure that state files do not overwrite each other, it uses path-like structure to organize state files within the S3 bucket.
+    region         	   = "us-east-1"
+    encrypt        	   = true
+    
+  }
+```
+ - [Create an IAM User and Policy Create an IAM user with the necessary permissions to access the S3 bucket](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.IAM.S3CreatePolicy.html)
+   - Terraform will need the following AWS IAM permissions on the target backend bucket:
+```
+     s3:ListBucket on arn:aws:s3:::mybucket
+     s3:GetObject on arn:aws:s3:::mybucket/path/to/my/key
+     s3:PutObject on arn:aws:s3:::mybucket/path/to/my/key
+     s3:DeleteObject on arn:aws:s3:::mybucket/path/to/my/key
+```
