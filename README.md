@@ -69,10 +69,10 @@
 - creating **[ansible inventory](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/hosts)**
      - this where you add the **hosts** you want to manage using ansilbe and the **connections variables** to access those hosts if it was needed
   #### configuring ansible to access ec2
-     - provide your ec2 public ip, ec2-user name and key.pem file you associated with the ec2 on creation inside your **[ansible inventory](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/hosts)**
+     - provide your ec2 public ip/dns, ec2-user name and key.pem file you associated with the ec2 on creation inside your **[ansible inventory](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/ansible/hosts)**
          ```
          [ec2_instances]
-          #your ec2 public ip
+          #your ec2 public ip/dns
          [ec2_instances:vars]
           ansible_user=ec2-user                         #this is the default user name so if you made a custom one please change it accordingly
           ansible_ssh_private_key_file=path/to/key.pem  #the key-pair associated with the ec2 instance when it was created give the path of the yourkey.pem
