@@ -286,7 +286,8 @@ stage('Building our image') {
       > - On the **Custom Resource Definition** details page, select **View Instances** from the **Actions** menu
       > - On the **ClusterLoggings** page, click Create **ClusterLogging**.    
  - **Now** open your **ClusterLoggings** yaml and scroll to **collection** section and type your **Collector Implementation** either **vector** or **fluentd** Then scroll to **logstore** sections and type your log operator either **loki** or **elasticsearch** ( assuming you installed loki operator)
- - **Note** > Fluentd and ElasticSearch are deprecated and are planned to be removed
+ - **Note**
+    - > Fluentd and ElasticSearch are deprecated and are planned to be removed
  - For more detailed info and installation of other versions please refer to [openshift docs for logging](https://docs.openshift.com/container-platform/4.14/logging/cluster-logging-deploying.html) & [openshift docs for log storages](https://docs.openshift.com/container-platform/4.14/logging/log_storage/installing-log-storage.html)
     
 
