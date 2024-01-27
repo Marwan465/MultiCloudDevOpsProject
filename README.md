@@ -271,11 +271,11 @@ stage('Building our image') {
    - Administrator permissions.
    - Access to the OpenShift Container Platform web console.
  - **Procedure**
-    > - In the OpenShift Container Platform web console, click **Operators** → **OperatorHub**. \
-    > - Type **OpenShift Logging** in the Filter by keyword box. \
-    > - Choose **Red Hat OpenShift Logging** from the list of available Operators, and click Install. \
-    > - Ensure that A specific namespace on the cluster is selected under Installation mode. \
-    > - Ensure that Operator recommended namespace is **openshift-logging** under Installed Namespace. \
+    > - In the OpenShift Container Platform web console, click **Operators** → **OperatorHub**. 
+    > - Type **OpenShift Logging** in the Filter by keyword box. 
+    > - Choose **Red Hat OpenShift Logging** from the list of available Operators, and click Install. 
+    > - Ensure that A specific namespace on the cluster is selected under Installation mode. 
+    > - Ensure that Operator recommended namespace is **openshift-logging** under Installed Namespace. 
     > - Select Enable operator recommended cluster monitoring on this namespace. 
      > - This option sets the openshift.io/cluster-monitoring: "true" label in the Namespace object. You must select this option to ensure that cluster monitoring scrapes the openshift-logging namespace.
    - **Creating a ClusterLogging object by using the web console**
