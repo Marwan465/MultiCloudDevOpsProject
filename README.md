@@ -43,6 +43,9 @@
 - [Pipeline](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#pipeline)
      - [Importing and using shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#importing-and-using-shared-library)
 - [Docker](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#docker)
+     - [Setting Up Docker]()
+     - [Project Repo]()
+     - [Troubleshooting]()
 - [Terraform](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform)
    - [Terraform Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform-setup-instructions)
    - [Aws-cli Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-cli-setup-instructions)
@@ -206,8 +209,18 @@ stage('Building our image') {
   **Note** groovy can be dynamically typed which mean you don't have to state the type of the variable before declaring it
 
 ## Docker
+ ### Setting Up Docker
 - **[Setting up docker](https://docs.docker.com/engine/install/)**
+ ### Project Repo
 - **[Repo used in the project](https://hub.docker.com/repositories/marwan512)**
+ ### Troubleshooting
+- **docker.sock** permission denied error make sure your user is added to docker group and that the docker.sock file has the required permissions
+  ```
+  usermod -aG docker ${USER}
+  chown $USER /var/run/docker.com
+  ```
+ 
+  
 ## Terraform
  ### Terraform Setup instructions
  ### Aws-cli Setup instructions
