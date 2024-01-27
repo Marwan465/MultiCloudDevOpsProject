@@ -104,7 +104,7 @@ our project **ansible role** structure is \
  ### Troubleshooting
   - If you encountred an issue with key.pem permission make sure it has the following permissions
     ```
-    chmod 400 yourkey.pem
+    chmod 600 yourkey.pem
     ```
   - you might in some scenarios need python and boto3 packages
     ```
