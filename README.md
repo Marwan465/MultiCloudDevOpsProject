@@ -218,7 +218,7 @@ stage('Building our image') {
 - **docker.sock** permission denied error make sure your user is added to docker group and that the docker.sock file has the required permissions
   ```
   usermod -aG docker ${USER}
-  chown $USER /var/run/docker.com
+  chown $USER /var/run/docker.sock
   ```
  
   
