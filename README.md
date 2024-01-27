@@ -320,6 +320,7 @@ stage('Building our image') {
 ```
  -  Include the backend block in the Terraform configuration
 ```
+terraform {
   backend "s3" {
     bucket         	   = "tfstate-bucket-1"
     key              	   = "/path/to/my/key"   // **Note** this is where the terraform state will be written to so it has to be unique to ensure that state files do not overwrite each other, it uses path-like structure to organize state files within the S3 bucket.
@@ -327,6 +328,7 @@ stage('Building our image') {
     encrypt        	   = true
     
   }
+}
 ```
  - [Create an IAM User and Policy Create an IAM user with the necessary permissions to access the S3 bucket](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.IAM.S3CreatePolicy.html)
    - Terraform will need the following AWS IAM permissions on the target backend bucket:
@@ -338,6 +340,7 @@ stage('Building our image') {
 ```
 - Include the IAM role in the Terraform backend state
 ```
+terraform {
    backend "s3" {
     bucket         	   = "tfstate-bucket-1"
     key              	   = "/path/to/my/key"   // **Note** this is where the terraform state will be written to so it has to be unique to ensure that state files do not overwrite each other, it uses path-like structure to organize state files within the S3 bucket.
@@ -346,5 +349,6 @@ stage('Building our image') {
     role_arn   = "arn:aws:iam::ACCOUNT-ID:role/myrole"
     
   }
+}
   
 ```
