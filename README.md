@@ -47,7 +47,7 @@
      - [Project Repo](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#project-repo)
      - [Troubleshooting](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#troubleshooting-1)
 - [Terraform](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform)
-   - [Prerequisites]()
+   - [Prerequisites](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#prerequisites)
    - [Terraform Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform-setup-instructions)
    - [Aws-cli Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-cli-setup-instructions)
    - [AWS configure Access keys and region](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-configure-access-keys-and-region)
@@ -225,14 +225,22 @@ stage('Building our image') {
 ## Terraform
  ### Prerequisites
   - Terraform vscode extension
-  - Terraform ClI
+  - Terraform Cli
   - AWS-CLI
  ### Terraform Setup instructions
- 1- **[Follow Hashicorp Guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)**
- 2- In your vscode install Terraform extension
+  - **[Follow Hashicorp Guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)** 
+  - In your vscode install Terraform extension
+  -  ![420034640_908502564183397_4190505788383919799_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/7f4902ea-9b35-4e09-82e1-c8a289025138)
+
  ### Aws-cli Setup instructions
  - **[Follow AWS instruction to install aws-cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)**
  ### AWS configure Access keys and region
+ - Now it's time to configure our **AWS IAM user Access keys** in your command line run the following command and provide your **Access Key ID** and **Secret Access Key** these are the credentials **Terraform** will be using to be authenticated by **AWS**
+   ```
+   aws configure
+   ```
+ - ![420092284_688208766838917_4832216871114481797_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/91d1b44f-40f5-4140-b0ab-028210845ef0)
+
  ### Terraform Module Architecture
 ## Monitoring and Logging
 ## AWS Integration
