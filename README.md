@@ -47,6 +47,7 @@
      - [Project Repo](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#project-repo)
      - [Troubleshooting](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#troubleshooting-1)
 - [Terraform](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform)
+   - [Prerequisites]()
    - [Terraform Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform-setup-instructions)
    - [Aws-cli Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-cli-setup-instructions)
    - [AWS configure Access keys and region](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-configure-access-keys-and-region)
@@ -222,8 +223,15 @@ stage('Building our image') {
  
   
 ## Terraform
+ ### Prerequisites
+  - Terraform vscode extension
+  - Terraform ClI
+  - AWS-CLI
  ### Terraform Setup instructions
+ 1- **[Follow Hashicorp Guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)**
+ 2- In your vscode install Terraform extension
  ### Aws-cli Setup instructions
+ - **[Follow AWS instruction to install aws-cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)**
  ### AWS configure Access keys and region
  ### Terraform Module Architecture
 ## Monitoring and Logging
