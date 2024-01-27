@@ -2,15 +2,16 @@
   ![421734725_788162733339542_9095234959083725977_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/430dcfdd-6858-4a9c-8711-199f87ec8a41) 
 
 ### Deliverables
-- [Terraform](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform) \
-- [Ansible role](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/main/ansible) \
-- [jenkins shared library](https://github.com/Marwan465/jenkins-simple-library) \
-- [JenkinsFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/jenkinsfile) \
-- [DockerFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/Dockerfile) \
-- [Jenkins job configuration instructions for building Docker image on code commits](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-job-configuration-instructions) \
-- [Instructions for setting up centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#monitoring-and-logging) \
+- [Terraform](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#terraform) 
+- [Ansible role](https://github.com/Marwan465/MultiCloudDevOpsProject/tree/main/ansible) 
+- [jenkins shared library](https://github.com/Marwan465/jenkins-simple-library) 
+- [JenkinsFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/jenkinsfile) 
+- [DockerFile](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/Dockerfile) 
+- [Jenkins job configuration instructions for building Docker image on code commits](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#jenkins-job-configuration-instructions) 
+- [Instructions for setting up centralized logging](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#monitoring-and-logging) 
 - [Instructions for AWS integration in the Terraform Code](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#aws-integration)
   - [S3 Terraform Backend state](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/dev/README.md#s3-terraform-backend-state)
+  - [Integrate CloudWatch for monitoring]()
 
 ### Goals 
 - provision AWS resources using Terraform
@@ -354,3 +355,4 @@ terraform {
 }
   
 ```
+### Integrate CloudWatch for monitoring
