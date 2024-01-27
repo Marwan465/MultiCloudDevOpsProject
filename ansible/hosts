@@ -3,7 +3,8 @@
 
 
 [ec2_instances]
-3.91.221.201                      #your ec2 public ip/dns
+3.91.221.201                  #your ec2 public ip/DNS
+
 
 [managed_nodes:vars]
 ansible_ssh_private_key_file=~/.ssh/id_rsa
@@ -14,5 +15,6 @@ ansible_python_interpreter=/usr/bin/python3
 [ec2_instances:vars]
 ansible_user=ec2-user                         #this is the default user name so if you made a custom one please change it accordingly
 ansible_ssh_private_key_file=~/.ssh/id_rsa   #the key-pair associated with the ec2 instance when it was created give the path of the yourkey.pem
+
 
 
