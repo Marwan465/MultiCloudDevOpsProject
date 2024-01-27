@@ -271,6 +271,10 @@ stage('Building our image') {
    - Administrator permissions.
    - Access to the OpenShift Container Platform web console.
  - **Procedure**
+   - **Installing OpenShift Elasticsearch Operator**
+      - In the OpenShift web console, click **Operators** → **OperatorHub**. 
+      - Type **elasticsearch** in the Filter by keyword box. 
+      - Choose **OpenShift Elasticsearch Operator** from the list of available Operators, and click Install. 
    - **Installing Red Hat OpenShift Logging Operator**
     > - In the OpenShift Container Platform web console, click **Operators** → **OperatorHub**. 
     > - Type **OpenShift Logging** in the Filter by keyword box. 
