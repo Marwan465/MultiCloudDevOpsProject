@@ -44,6 +44,8 @@
      - [Configure jenkins shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#configure-jenkins-shared-library)
 - [Pipeline](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#pipeline)
      - [Importing and using shared library](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#importing-and-using-shared-library)
+     - [Performing Tests]()
+      - [Adding SonarQube plugin to gradle]()
 - [Docker](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#docker)
      - [Setting Up Docker](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#setting-up-docker)
      - [Project Repo](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#project-repo)
@@ -215,6 +217,8 @@ stage('Building our image') {
    - ![419926150_343121968625879_8202173263761135491_n (1)](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/eae6bc26-cf24-41b3-80ec-53dc61dc02ab)
 
   **Note** groovy can be dynamically typed which mean you don't have to state the type of the variable before declaring it
+  #### Performing Tests
+   ##### Adding SonarQube plugin to gradle
 
 ## Docker
  ### Setting Up Docker
