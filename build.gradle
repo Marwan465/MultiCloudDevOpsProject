@@ -18,16 +18,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' // Add this if using Thymeleaf
     testImplementation('org.springframework.boot:spring-boot-starter-test')
-    classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:4.4.1.3373'
+   
 }
 
 test {
     useJUnitPlatform()
 }
-sonarQube {
-    properties {
-        property('sonar.host.url', '192.168.65.131:9000')
-        property('sonar.gradle.skipCompile', 'true')
-   
-    }
-}
+
