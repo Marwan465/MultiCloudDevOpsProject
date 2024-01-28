@@ -24,15 +24,27 @@ steps {
                         url: 'https://github.com/Marwan465/MultiCloudDevOpsProject.git'
                         
                 }
+                 script{
+                    //give the gradlew file excutable permissions
+                     sh 'chmod +x ./gradlew'   
+                }
 
 }
+}
+
+stage('Unit Test'){
+    steps{
+        script{
+            test.unitTest()
+        }
+    }
 }
 
 
 stage('Build') {
 steps{
 script {
-    sh 'chmod +x ./gradlew'
+    
  (COMMIT_HASH,dockerImage) = dockerize.buildDockerImage(registry, image)
  
 
@@ -43,22 +55,6 @@ script {
 }
 
 }
-}
-          
-stage('Unit Test'){
-    steps{
-        script{
-            test.unitTest()
-        }
-    }
-}
-    
-stage('SonarQube Test'){
-    steps{
-        script{
-            test.sonarQubeTest()
-        }
-    }
 }
 
 
@@ -83,6 +79,14 @@ stage('SonarQube Test'){
                 }
             }
         }
+
+stage('SonarQube Test'){
+    steps{
+        script{
+            test.sonarQubeTest()
+        }
+    }
+}
         
 
 
