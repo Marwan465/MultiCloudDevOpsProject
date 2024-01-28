@@ -219,6 +219,24 @@ stage('Building our image') {
   **Note** groovy can be dynamically typed which mean you don't have to state the type of the variable before declaring it
   #### Performing Tests
    ##### Adding SonarQube plugin to gradle
+   - In your **build.gradle** add the sonarQube plugin
+     ```
+     plugins {
+        id "org.sonarqube" version "4.4.1.3373"
+     }
+     ```
+     ![420697653_314612114363608_4412397192236509058_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/88834b4b-557f-4d5c-bc0c-2172268967a4)
+   - In your **gradle.properties** file add you **sonarQube** properties we will only be adding **sonarQube** host. that host is where the sonarqube analysis result will be stored and accessed at
+     ```
+     systemProp.sonar.host.url=http://sonarQube_Host:9000
+     ```
+   - To Run **sonarQube test** run the following script in your **pipeline**
+  ```
+   sh('./gradlew sonar')
+  ```
+**Note** sonar is the default sonarQube task name but if you defined another task name in your **build.gradle** then use that name instead **e.g** to run the **test** task use 'sh('./gradlew test')'
+     
+
 
 ## Docker
  ### Setting Up Docker
