@@ -219,7 +219,7 @@ stage('Building our image') {
   **Note** groovy can be dynamically typed which mean you don't have to state the type of the variable before declaring it
   #### Performing Tests
    ##### Adding SonarQube plugin to gradle
-   - In your **build.gradle** add the sonarQube plugin
+   - In your **build.gradle** add sonarQube to your plugins
      ```
      plugins {
         id "org.sonarqube" version "4.4.1.3373"
@@ -234,7 +234,12 @@ stage('Building our image') {
   ```
    sh('./gradlew sonar')
   ```
-**Note** sonar is the default sonarQube task name but if you defined another task name in your **build.gradle** then use that name instead **e.g** to run the **test** task use 'sh('./gradlew test')'
+**Note** sonar is the default sonarQube task name but if you defined another task name in your **build.gradle** then use that name to run that name's task **e.g** to run the **test** task use 'sh('./gradlew test')'
+   - In our project we added the previous command in our defined method **sonarQubeTest** in our jenkins shared library then we i called the method from our pipeline
+   - ![416458616_934091815103035_4230977135804984304_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/e073a09f-855f-42f6-938e-9cfaebc602b6)
+   - ![419926150_343121968625879_8202173263761135491_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/9674e72d-d676-4011-ad46-c75f12688a8b)
+
+
      
 
 
