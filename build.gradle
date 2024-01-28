@@ -9,13 +9,7 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
-sonarQube {
-    properties {
-        property('sonar.host.url', '192.168.65.131:9000')
-        property('sonar.gradle.skipCompile', 'true')
-   
-    }
-}
+
 repositories {
     mavenCentral()
 }
@@ -28,4 +22,11 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+sonarQube {
+    properties {
+        property('sonar.host.url', '192.168.65.131:9000')
+        property('sonar.gradle.skipCompile', 'true')
+   
+    }
 }
