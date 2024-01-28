@@ -230,7 +230,7 @@ stage('Building our image') {
      ```
      systemProp.sonar.host.url=http://sonarQube_Host:9000
      ```
-   - To Run **sonarQube test** run the following script in your **pipeline**
+   - To Run **sonarQube test** make sure you have the **sonarqube scanner** plugin installed in your jenkins then run the following script in your **pipeline**
   ```
    sh('./gradlew sonar')
   ```
