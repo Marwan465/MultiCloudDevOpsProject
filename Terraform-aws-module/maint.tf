@@ -30,7 +30,7 @@ module "security_group" {
 
 module "ec2" {
   source              = "./modules/ec2"
-  subnet_id           = module.private-subnet.private_subnet_id
+  subnet_id           = module.public-subnet.public_subnet_id
   security_group_id   = module.security_group.security_group_id
   ami                 = var.ami  
   instance_type       = var.instance_type
