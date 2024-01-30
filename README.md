@@ -278,8 +278,8 @@ stage('Building our image') {
  ### Terraform Module Architecture
  - Now it's time to create our Terraform Module Structure it looks something like this
  - ![420697653_314612114363608_4412397192236509058_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/3f7b9cef-b3bb-46e4-b425-23d42288cca8)
-    - 1- Is the **Root main.tf** specifies the modules to pass and recieve variable from those modules
-    - 2- The **Root output.tf** these are the variables that will be displayed in command line after we finish provisioning 
+    - 1- Is the **Root main.tf** specifies the modules to pass and recieve values from those modules
+    - 2- The **Root output.tf** these are the outputs that will be displayed in command line after we finish provisioning 
     - 3- The **Root variables.tf** are the variables taken as input by **Root main.tf** 
         - **Note** if some variable wasn't assigned a value in the **Root variables.tf** you will be prompt to  provide that value when you run the **Terraform module**
     - 4- The values the **Modules** will pass to **Root main.tf**
@@ -358,7 +358,7 @@ terraform {
   }
 }
 ```
- - [Create an IAM User and Policy Create an IAM user with the necessary permissions to access the S3 bucket](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.IAM.S3CreatePolicy.html)
+ - [Create an IAM Policy Create an IAM role with the necessary permissions to access the S3 bucket](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.IAM.S3CreatePolicy.html)
    - Terraform will need the following AWS IAM permissions on the target backend bucket:
 ```
      s3:ListBucket on arn:aws:s3:::mybucket
