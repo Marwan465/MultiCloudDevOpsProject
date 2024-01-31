@@ -67,7 +67,9 @@
    
 
 
+## Architecture overview
 
+![New Project2 (1)](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/b9a78bb7-4e3e-4d4f-9770-cb02cfe85e83)
 
 ## Ansible
 > Ansible is the simplest way to automate apps and IT infrastructure. Application Deployment + Configuration Management + Continuous Delivery
