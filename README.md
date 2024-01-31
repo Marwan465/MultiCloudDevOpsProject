@@ -287,6 +287,11 @@ stage('Building our image') {
         - **Note** if some variable wasn't assigned a value in the **Root variables.tf** you will be prompt to  provide that value when you run the **Terraform module**
     - 4- The values the **Modules** will pass to **Root main.tf**
     - 5- The values the **Root main.tf** passes to the **Modules** as inputs
+    - Inside the security group main.tf you can edit the ips to be allowed
+    - ![cidr](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/8d63e934-e534-4a24-b43e-37c31aa14a36)
+        - **Note**  CIDR 0.0.0.0/0 containing all possible IP addresses. you can change it to only allow certain IPs
+        -  **Note** port 22 is used for the ssh connection
+
  - Now to run your module
    ```
    terraform init
