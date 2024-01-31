@@ -27,7 +27,7 @@
 - Describe and define jenkins shared library & configure jenkins to use the library.
 - Describe jenkins pipelines,  connect jenkins to github,docker,openshift using their plugins,configure jenkins credentials to authenticate, trigger the pipeline on certain events and how to import and use our jenkins shared library in the pipeline
 ### Sections
--[Architecture overview](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#architecture-overview)
+- [Architecture overview](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#architecture-overview)
 - [Ansible](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#ansible)
    - [Ansible Setup instructions](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#ansible-setup-instructions)
       - [configuring ansible to access ec2](https://github.com/Marwan465/MultiCloudDevOpsProject/blob/main/README.md#configuring-ansible-to-access-ec2)
