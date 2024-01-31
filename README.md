@@ -280,7 +280,8 @@ stage('Building our image') {
 
  ### Terraform Module Architecture
  - Now it's time to create our Terraform Module Structure it looks something like this
- - ![420697653_314612114363608_4412397192236509058_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/3f7b9cef-b3bb-46e4-b425-23d42288cca8)
+ - ![420148756_312487034622023_8771969366052421164_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/b3cbf390-b9a8-4e00-babf-66dd915f8f04)
+
     - 1- Is the **Root main.tf** specifies the modules to pass and recieve values from those modules
     - 2- The **Root output.tf** these are the outputs that will be displayed in command line after we finish provisioning 
     - 3- The **Root variables.tf** are the variables taken as input by **Root main.tf** 
@@ -288,7 +289,9 @@ stage('Building our image') {
     - 4- The values the **Modules** will pass to **Root main.tf**
     - 5- The values the **Root main.tf** passes to the **Modules** as inputs
     - Inside the security group main.tf you can edit the ips to be allowed
-    - ![cidr](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/8d63e934-e534-4a24-b43e-37c31aa14a36)
+    - ![420160399_712678361006426_7477433690564377252_n](https://github.com/Marwan465/MultiCloudDevOpsProject/assets/67644687/34d4fba3-59df-4fe4-86fa-6df609da2a5d)
+
+    
         - **Note**  CIDR 0.0.0.0/0 containing all possible IP addresses. you can change it to only allow certain IPs
         -  **Note** port 22 is used for the ssh connection
 
