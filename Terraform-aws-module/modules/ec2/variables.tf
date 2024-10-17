@@ -22,3 +22,18 @@ variable "user_data" {
   description = "User data script for EC2 instance"
   default     = ""
 }
+variable "instance_name" {
+  description = "Name tag for the EC2 instance"
+  type        = string
+}
+
+variable "instance_tags" {
+  description = "Map of additional tags to assign to the EC2 instance"
+  type        = map(string)
+}
+
+variable "public_ip" {
+  description = "Whether to associate a public IP address"
+  type        = bool
+  default     = false
+}
